@@ -1,6 +1,7 @@
 package com.niks.counter
 
 import android.os.Bundle
+import android.view.KeyEvent
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -33,31 +34,6 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
-}
 
-
-@Composable
-fun ToolPanel() {
-    Row(
-        
-    ) {  }
-}
-
-@Composable
-fun CounterContainer() {
-    var clickCount by remember { mutableIntStateOf(0) }
-    Column(
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-
-        Text (
-            text = String.format("%04d", clickCount)
-        )
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun Preview() {
 
 }
